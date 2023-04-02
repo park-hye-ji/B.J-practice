@@ -1,0 +1,8 @@
+a,b,c=map(int,input().split())
+
+print(a+b+c)
+
+
+
+
+//map(int, input()) 과 int(input()) 의 차이점 알기
