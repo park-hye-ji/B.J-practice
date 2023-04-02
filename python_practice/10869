@@ -1,0 +1,10 @@
+a,b=input().split()
+
+print(int(a)+int(b))
+print(int(a)-int(b))
+print(int(a)*int(b))
+print(int(a)//int(b))
+print(int(a)%int(b))
+
+
+//몫을 구할 땐 ' // '을 사용하여 몫을 구한다. (소수점 X)
