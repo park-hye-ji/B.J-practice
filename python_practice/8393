@@ -1,0 +1,7 @@
+N = int(input())
+sum = 0
+for num in range(N):
+    x = num + 1
+    sum += x
+    
+print(sum)
