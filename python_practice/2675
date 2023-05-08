@@ -1,0 +1,16 @@
+from sys import stdin
+
+case_number = int(input())
+test_case = stdin.readlines()
+total_test = []
+
+for i in test_case:
+    test = list(i.split())
+    test_num = int(test[0])
+    test_sample = str(test[1])
+
+    test_result = []
+
+    for k in test_sample:
+        print(k * test_num, end="")
+    print("")
