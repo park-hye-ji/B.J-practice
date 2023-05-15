@@ -1,0 +1,15 @@
+c = int(input())
+
+arr = []
+avg = []
+for i in range(c):
+    cla = list(map(int, input().split()))[1:]
+    arr.append(cla)
+    avg.append(sum(cla) / len(cla))
+
+for cla, a in zip(arr, avg):
+    cnt = 0
+    for i in cla:  
+        if i > a:
+            cnt += 1
+    print(f"{cnt / len(cla)*100:0.3f}%")
