@@ -1,0 +1,17 @@
+arr = []
+for _ in range(5):
+    arr.append(input())
+
+check = []
+for i in range(5):
+    check.append(len(arr[i]))
+
+mx = max(check)
+for i in range(5):
+    arr[i] += "*" * (mx - len(arr[i]))
+
+ans = ""
+for i in range(mx):
+    for j in range(5):
+        ans += arr[j][i]
+print(ans.replace("*",""))
