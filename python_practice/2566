@@ -1,0 +1,12 @@
+list1=[]
+max1=0
+for i in range(9):
+    x = list(map(int,input().split()))
+    if(max1<max(x)):
+       max1=max(x)
+    list1.append(x)
+for i in range(9):
+    for j in range(9):
+        if(list1[i][j]==max1):
+            print(max1)
+            print(i+1,j+1)
