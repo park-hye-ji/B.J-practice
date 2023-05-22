@@ -1,0 +1,33 @@
+H, M, S = map(int,input().split())
+A = int(input())
+
+Total = H * 3600 + M * 60 + S + A
+
+H = Total // 3600
+
+if H >= 24:
+    Hours = H // 24
+    H = H - Hours * 24
+    Total = Total - (H + Hours * 24) * 3600
+else:
+    H = H
+    Total = Total - H * 3600
+
+M = Total // 60
+
+if M >= 60:
+    Minutes = M // 60
+    M = M - Minutes * 60
+    H = H + Minutes * 1
+    Total = Total - (M + Minutes * 60) * 60
+else:
+    M = M
+    Total = Total - (M) * 60    
+
+if Total >= 60:
+    Total = Total - 60
+    M = M + 1
+else:
+    S = Total
+
+print(H, M, S)
