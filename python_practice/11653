@@ -1,0 +1,9 @@
+num = int(input()) 
+x = 2 
+
+while num != 1:
+    if num % x == 0: 
+        num /= x
+        print(x)
+    else : 
+        x += 1
