@@ -1,0 +1,7 @@
+a, b, c = map(int, input().split())
+
+mom = a * b - c 
+if mom <= 0:
+    mom = 0
+
+print(mom)
