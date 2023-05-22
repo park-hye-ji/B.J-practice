@@ -1,0 +1,4 @@
+a = input().split() 
+list_a = list(map(int, a)) 
+list_a.sort() 
+print(list_a[1]) 
