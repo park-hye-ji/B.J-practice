@@ -1,0 +1,11 @@
+sumit = 0 #
+
+for i in range(5):
+    num = int(input())
+    if num < 40:
+        sumit += 40
+    else : 
+        sumit += num
+    
+avg = sumit // 5 
+print(avg)
