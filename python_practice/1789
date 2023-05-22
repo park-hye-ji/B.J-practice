@@ -1,0 +1,12 @@
+result = int(input())
+num = 0
+sum_result = 0
+
+while True:
+    if sum_result > result: 
+        num -= 1 
+        print(num)
+        break 
+    else :
+        num += 1 
+        sum_result += num 
