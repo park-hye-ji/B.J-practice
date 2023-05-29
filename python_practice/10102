@@ -1,0 +1,23 @@
+while True:
+    count_a = 0 
+    count_b = 0 
+    lenth = int(input()) 
+    string = input() 
+    
+    if len(string) > lenth: 
+        continue 
+    list_s = list(string) 
+    
+    for i in list_s: 
+        if i == "A":
+            count_a += 1
+        else :
+            count_b += 1
+            
+    if count_a > count_b:
+        print("A")
+    elif count_a < count_b:
+        print("B")
+    else:
+        print("Tie")
+    break
