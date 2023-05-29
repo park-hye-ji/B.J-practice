@@ -1,0 +1,21 @@
+n = int(input())
+
+for _ in range(n):
+  scores = [] 
+  score = 0 
+  result = input() 
+  
+  for i in range(len(result)):
+    if result[i] == "O":
+      score += 1
+      if i == (len(result) - 1):
+        for j in range(score):
+          score += j
+        scores.append(score)
+    else:
+      for j in range(score):
+        score += j
+      scores.append(score)
+      score = 0 
+      
+  print(sum(scores))
