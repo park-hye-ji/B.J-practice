@@ -1,0 +1,15 @@
+run = int(input()) 
+
+for i in range(run): 
+    rec = input().split()
+    r = int(rec[0]) 
+    e = int(rec[1]) 
+    c = int(rec[2]) 
+    
+    if r + c < e: 
+        print("advertise")
+    elif r + c == e:
+        print("does not matter")
+    else : 
+        print("do not advertise")
+
