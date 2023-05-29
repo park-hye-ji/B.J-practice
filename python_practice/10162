@@ -1,0 +1,30 @@
+a = 300 
+b = 60 
+c = 10 
+result_a = 0 
+result_b = 0
+result_c = 0 
+
+while True:
+    num = int(input())
+    if 1 <= num <= 10000: 
+        break 
+    
+temp = num 
+
+while True:
+    if num >= a :
+        result_a = num // a 
+        num %= a
+    elif num >= b:
+        result_b = num // b
+        num = num % b
+    else : 
+        result_c = num // c
+        num %= c
+        break 
+
+if temp == (result_a * a) + (result_b * b) + (result_c * c): 
+    print(result_a, result_b, result_c)
+else : 
+    print(-1)
