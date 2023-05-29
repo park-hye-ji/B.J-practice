@@ -1,0 +1,16 @@
+dice1 = dice2 = 100
+
+run = int(input()) 
+
+for i in range(run):
+    list_d = input().split()
+    a = int(list_d[0]) 
+    b = int(list_d[1]) 
+    if a > b: 
+        dice2 -= a 
+    elif a < b: 
+        dice1 -= b 
+
+print(dice1)
+print(dice2)
+
