@@ -1,0 +1,14 @@
+run1 = int(input())
+for i in range(run1): 
+    run2 = int(input())
+    result_score = 0 
+    result_str = "" 
+    for j in range(run2):
+        list_yk = input().split()
+        name = str(list_yk[0])
+        score = int(list_yk[1])
+        if score > result_score:
+            result_score = score
+            result_str = name
+        
+    print(result_str)
