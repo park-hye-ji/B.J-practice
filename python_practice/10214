@@ -1,0 +1,18 @@
+run = int(input())
+score_y = 0 
+score_k = 0 
+for i in range(run): 
+    for j in range(9): 
+        list_yk = input().split()
+        y = int(list_yk[0])
+        k = int(list_yk[1])
+        score_y += y
+        score_k += k
+        
+    if score_y > score_k: 
+        print("Yonsei")
+    elif score_y < score_k: 
+        print("Korea")
+    else : 
+        print("Draw")
+
