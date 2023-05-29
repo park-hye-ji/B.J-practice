@@ -1,0 +1,23 @@
+while True:
+    
+    num = int(input())
+    cnt1 = 0
+    cnt1_str = "" 
+    result = "" 
+    if num > 0: 
+        for i in range(1, num): 
+            if num % i == 0:
+                cnt1 += i
+                if i == 1:
+                    cnt1_str += " = " + str(i)
+                else :
+                    cnt1_str += " + " + str(i)
+    else :
+        break
+        
+    if num == cnt1: 
+        result = str(num) + cnt1_str
+        print(result)
+    else :  
+        result = str(num) + " is NOT perfect."
+        print(result)
